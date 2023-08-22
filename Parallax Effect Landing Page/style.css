@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html{
+   font-size: 62.5%;
+}
+
+body{
+   font-family: 'Montserrat', sans-serif;
+}
+
+.primary-title{
+   font-size: 4.5rem;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 6px 21px;
+   background: #313534f6;
+   font-weight: 400;
+   color: rgba(255, 255, 255, 0.871);
+}
+
+
+
+header .parallax-1,
+.section6 .parallax-1{
+   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("./img/image1.png");
+   min-height: 100vh;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.section2 .parallax-2{
+   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("./img/image2.png");
+}
+
+.section4 .parallax-3{
+   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("./img/image3.png");
+}
+
+.parallax-2,
+.parallax-3{
+   min-height: 50vh;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.parallax-1,
+.parallax-2,
+.parallax-3{
+   background-attachment: fixed;
+}
+
+.section1,
+.section3,
+.section5{
+   padding: 0 10em;
+   text-align: center;
+}
+
+.section1{
+   border: 0.11111px solid #f4f4f4;
+}
+
+.section3,
+.section5{
+   border: 0.11111px solid #282e34;
+}
+
+.head,
+.section2,
+.section4,
+.section6{
+   position: relative;
+}
+
+.center{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.section-light {
+   background-color: #f4f4f4;
+   color: #666;
+ }
+
+.section-dark {
+   background-color: #282e34;
+   color: #ddd;
+}
+
+.title{
+   font-size: 3rem;
+   text-transform: capitalize;
+   margin: 2em 0 0.9em 0;
+
+}
+
+.para{
+   text-align: left;
+   font-size: 1.4rem;
+   margin-bottom: 2em;
+   line-height: 1.5em;
+}
+
+/* ################## media queries########## */
+
+@media (max-width: 1080px){
+   html{
+      font-size: 50%;
+   }
+   .primary-title{
+      text-align: center;
+      padding: 3px 21px;
+   }
+   .title{
+      text-align: left;
+   }
+}
